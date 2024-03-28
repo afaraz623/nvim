@@ -44,6 +44,9 @@ return {
       opts.desc = "Show line diagnostics"
       vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
 
+      opts.desc = "open diagnostics list"
+      vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, opts) -- show diagnostics list
+
       opts.desc = "Go to previous diagnostic"
       vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
 

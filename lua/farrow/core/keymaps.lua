@@ -30,9 +30,3 @@ vim.keymap.set("n", "<Leader>da", ":Lexplore<CR>")
 
 -- get out of insert mode 
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-
--- diagnostic keymaps
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "go to previous diagnostic message" })
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "go to next diagnostic message" })
-vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "open floating diagnostic message" })
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "open diagnostics list" })
