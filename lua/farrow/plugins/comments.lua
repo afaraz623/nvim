@@ -6,7 +6,9 @@ return {
     -- import comment plugin safely
     local comment = require("Comment")
 
-    -- enable comment
-    comment.setup({})
+    -- enabling comment and changing default binding to ?
+    comment.setup({
+      opleader = {line = '?'},
+    })
   end,
 }

@@ -27,7 +27,6 @@ vim.o.smartcase = true
 
 -- appearance specific settings
 vim.o.termguicolors = true
-vim.o.background = "dark"
 vim.o.signcolumn = "yes" -- for lsp and github signs
 
 -- make backspace work normally
@@ -57,4 +56,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
   group = highlight_group,
   pattern = "*",
+})
+
+-- settings for different languages
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "lua",
+	callback = function()
+		vim.opt_local.shiftwidth = 2
+		vim.opt_local.tabstop = 2
+	end
 })

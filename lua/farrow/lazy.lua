@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({{import = "farrow.plugins"}, {import = "farrow.plugins.lsp"}}, {
   install = {
-    colourscheme = {"catppuccin-mocha"},
+    colourscheme = {"rose-pine"},
     },
   checker = {
     enabled = true,
