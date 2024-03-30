@@ -23,10 +23,5 @@ vim.keymap.set({ "n", "v" }, "<space>", "<nop>", { silent = true })
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
--- open netrw
-vim.keymap.set("n", "<Leader>dd", ":Lexplore %:p:h<CR>")
-vim.keymap.set("n", "<Leader>da", ":Lexplore<CR>")
-
-
 -- get out of insert mode 
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
