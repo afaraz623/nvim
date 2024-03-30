@@ -6,9 +6,9 @@ vim.g.maplocalleader = " "
 vim.o.number = true
 vim.o.relativenumber = true
 
--- config tab and indents
-vim.o.tabstop = 8
-vim.o.shiftwidth = 8
+-- default tab and space indents
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 vim.o.expandtab = true
 vim.o.autoindent = true
 
@@ -56,13 +56,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
   group = highlight_group,
   pattern = "*",
-})
-
--- settings for different languages
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "lua",
-	callback = function()
-		vim.opt_local.shiftwidth = 2
-		vim.opt_local.tabstop = 2
-	end
 })
