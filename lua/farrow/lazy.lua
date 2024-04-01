@@ -11,10 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({{import = "farrow.plugins"}, {import = "farrow.plugins.lsp"}}, {
+require("lazy").setup({ { import = "farrow.plugins" } }, {
   install = {
-    colourscheme = {"rose-pine"},
-    },
+    colourscheme = { "rose-pine" },
+  },
   checker = {
     enabled = true,
     notify = false,
