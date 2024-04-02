@@ -90,11 +90,7 @@ return {
           cmd = {},
         },
 
-        rust_analyzer = {
-
-          capabilities = capabilities,
-          cmd = {},
-        },
+        rust_analyzer = {},
 
         lua_ls = {
           settings = {
